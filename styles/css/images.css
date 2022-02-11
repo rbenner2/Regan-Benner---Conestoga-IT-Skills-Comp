@@ -1,0 +1,64 @@
+main.gallery{
+    width: 100%;
+}
+
+h3{
+    margin: 20px;
+}
+
+h2{
+    margin: 20px;
+}
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery figure{
+    margin: 0;  
+}
+
+.gallery img{
+	display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 3px solid rgb(177, 177, 177);
+    padding: 5px;
+}
+
+.photos figcaption{
+	font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+	text-align: left;
+	padding: 6% 2%;
+	width: 96%;
+}
+
+#mainAside p{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*GALLERY*/
+
+    .photos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img{
+	    display: block;  
+    }
+
+    img{
+        width: 100%;
+    }
+    article{
+        width: 90%;
+    }
+    #mainAside{
+        width: 100%;
+    }
+}
